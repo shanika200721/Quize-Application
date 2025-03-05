@@ -51,3 +51,7 @@ This is a **Social Engineering Quiz Application** designed to educate users abou
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+2. **Navigate to the project folder**
+   ```bash
+   cd your-repo-name
+4. **Open the Application**
