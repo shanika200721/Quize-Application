@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Engineering Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container">
+      <section class="home active">
+        <div id="homePage" class="home-content">
+          <h1 style="color: #48104b;">Social Engineering</h1>
+          <p>This Quiz helps you to learn further about Social Engineering Attack types.</br>
+          </br>
+          Let's go to the challenge....!</p>
+          <button id="startButton" class="start-btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+      </section>
+
+      <section class="quiz-section" style="display: none;">
+        <div class="quiz-box">
+          <h1>Social Engineering</h1>
+          <div class="quiz-header">
+            <span>Question <span id="question-number">1</span> of <span id="total-questions">6</span></span>
+          </div>
+          <div id="quizDialog">
+            <span id="question-text"></span></br></br>
+            <div id="question-content"></div>
+            <form id="quizForm">
+              <!-- Options will be dynamically inserted here -->
+            </form>
+            <div class="quiz-footer">
+              <button id="prev-btn" onclick="prevQuestion()">Previous</button>
+              <button id="next-btn" onclick="nextQuestion()">Next</button>
+              <button onclick="submitAnswer()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="instructionsDialog" class="popup-info" style="display: none;">
+        <h2>Quiz Guide</h2>
+        <ul>
+          <p>- This short quiz will not only test your knowledge but also provide valuable insights.</p>
+          <p>- Take your time and answer thoughtfully.</p>
+          <p>- All the questions contribute to your final score.</p>
+          <p>- Lorem ipsum dolor sit amet, consectetur.</p> 
+        </ul>
+        <div class="btn-group">
+          <button class="info-btn exit-btn" onclick="backToHomePage()">Exit Quiz</button>
+          <button class="info-btn continue-btn" onclick="continueToQuiz()">Continue</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="finalDialog" class="popup-info-2" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p>Your score: <span id="final-score">0</span> out of <span id="total-questions-final">6</span></p>
+    <div class="article">
+      <h3>What is Social Engineering?</h3>
+      <p>
+        Social engineering is a manipulation technique that exploits human error to gain private information, access, or valuables. 
+        It relies on psychological manipulation to trick users into making security mistakes or giving away sensitive information.
+      </p>
+      <h3>Common Types of Social Engineering Attacks:</h3>
+      <ul>
+        <li><strong>Phishing:</strong> Fraudulent emails or messages that appear to be from reputable sources.</li>
+        <li><strong>Pretexting:</strong> Creating a fabricated scenario to obtain information.</li>
+        <li><strong>Baiting:</strong> Offering something enticing to lure victims into a trap.</li>
+        <li><strong>Tailgating:</strong> Gaining physical access to restricted areas by following someone with access.</li>
+      </ul>
+      <h3>How to Protect Yourself:</h3>
+      <ul>
+        <li>Be cautious of unsolicited emails or messages.</li>
+        <li>Verify the identity of the person or organization before sharing sensitive information.</li>
+        <li>Use strong, unique passwords and enable two-factor authentication.</li>
+        <li>Educate yourself and others about social engineering tactics.</li>
+      </ul>
+    </div>
+    <button class="info-btn-2" onclick="exitQuiz()">Exit</button>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
