@@ -160,7 +160,7 @@ body {
 
 .quiz-section .quiz-box {
   position: relative;
-  width: 600px;
+  width: 800px;                                 /*change the width: size*/ 
   background: transparent;
   border: 2px solid #641655;
   border-radius: 6px;
@@ -336,3 +336,4 @@ label {
   font-size: 14px;
   line-height: 1.6;
 }
+
